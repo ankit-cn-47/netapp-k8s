@@ -17,3 +17,5 @@ spec:
         image: ankitchandra47/netapp-assessment:10
         ports:
         - containerPort: 3000
+      imagePullSecrets:
+      - name: regcred
