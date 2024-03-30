@@ -9,4 +9,3 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 3000
-  type: ClusterIP  # Use NodePort or ClusterIP if you're not using a cloud provider with LoadBalancer support

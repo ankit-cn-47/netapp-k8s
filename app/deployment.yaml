@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: node-app
 spec:
-  replicas: 1  # Number of replicas you want
+  replicas: 1
   selector:
     matchLabels:
       app: node-app
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: <your-docker-hub-username>/netapp-node-app:latest  # Replace with your Docker Hub username and image name
+        image: ankitchandra47/netapp-assessment:10
         ports:
         - containerPort: 3000
